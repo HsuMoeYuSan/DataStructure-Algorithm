@@ -1,0 +1,12 @@
+body{background-color:#ffcad4;}
+h1{background-image:url("D:/Hsu Moe Yu San(KPTMYK-OO1352)/music.jpg");height:100px;width:100%;font-size:2em;text-align:center;border:solid red;border-radius:15px}
+a{padding-right:20px;border-right:2px solid blue;text-decoration:none}
+a:hover{background-color:#eb174a;text-decoration:overline;}
+a:active{background-color:yellow;text-decoration:underline;}
+p{font-size:1em;text-indent:3em;}
+span{font-weight:bold;font-style:italic;text-decoration:underline;text-color:#8f368d;}
+ul.box{border:solid green;border-radius:20px}
+li.aa{list-style-type:square}
+li.bb{list-style-type:upper-roman}
+li.cc{list-style-type:circle}
+{background-image:url("v.jpg");}

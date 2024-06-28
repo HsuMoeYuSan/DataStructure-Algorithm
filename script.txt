@@ -1,0 +1,73 @@
+<script>
+    var i;
+    for(i=0;i<16;i++){
+        if(i%2==0){
+            document.write(i+"is even"+"<br>");
+        }
+        else{
+            document.write(i+"is odd"+"<br>");
+        }
+    }
+
+</script>-->
+<script>
+    var i,j;
+    for(i=1;i<6;i++){
+        for(j=1;j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>--
+
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="login" method="get">
+<table>
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td><input type="submit" value="login"
+name="btnlogin"></td>
+<td><input type="reset" value="Clear"></td>
+</tr>
+</table>
+</form>
+
+PrintWriter out=response.getWriter();
+		String user=request.getParameter("name");
+		String password=request.getParameter("password");
+		if(user.equals("admin") && password.equals("cumyeik")) {
+			RequestDispatcher rd=request.getRequestDispatcher("Welcome");
+			rd.forward(request,response);
+		}
+		else {
+			out.println("Username or password is incorrect!");
+			RequestDispatcher rd=request.getRequestDispatcher("index.html");
+		}
+		out.close();
+		}
+	
+response.setContentType("text/html");
+	PrintWriter out=response.getWriter();
+	out.println("<html>");
+	out.println("<head>");
+	out.println("<title>Welcome Servelt</title>");
+	out.println("</head>");
+	out.println("<body>");
+	String user=request.getParameter("name");
+	out.println("Welcome user!"+user);
+	
+	out.println("</body>");
+	out.println("</html>");
+	out.close();
+	
